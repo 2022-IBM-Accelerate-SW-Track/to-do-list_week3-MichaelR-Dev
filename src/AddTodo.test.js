@@ -84,7 +84,7 @@ afterEach(() => {
   fireEvent.click(addButton);
 
   const check = screen.getByText(/History Test/i);
-  const checkDate = screen.getByText(new RegExp("2023-11-30", "i"));
+  const checkDate = screen.getByText(new RegExp("11/30/2023", "i"));
   expect(check).toBeInTheDocument();
   expect(checkDate).toBeInTheDocument();
 
@@ -109,7 +109,7 @@ afterEach(() => {
   fireEvent.click(addButton);
 
   const check = screen.getByText(/History Test/i);
-  const checkDate = screen.getByText(new RegExp("2022-05-30", 'i'));
+  const checkDate = screen.getByText(new RegExp("5/30/2022", 'i'));
   expect(check).toBeInTheDocument();
   expect(checkDate).toBeInTheDocument();
 
