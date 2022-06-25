@@ -10,7 +10,10 @@
 
 .left {
   left: 0;
-  background-color: #0f62fe;
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,202,255,1) 100%);
+
+  box-shadow: 12px 0px 22px 15px rgba(0,0,0,0.74);
 }
 
 .right {
@@ -27,16 +30,52 @@
 
 .name_title {
   font-size: 48px;
+  font-weight: 700;
+
   color: black;
-  text-align: left;
+  text-align: center;
   padding-bottom: 20px;
 }
 
 .brief_description {
+  text-align: center;
+
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.descList {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 5%;
+  align-content: left;
+}
+
+#descListBreak{
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.descList > li {
   text-align: left;
+  padding-left: 5%;
 }
 
 .profile_image {
-  width: 500px;
+  width: 100%;
+
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 25px;
+
+  box-shadow: 0px 0px 128px 0px rgba(0,0,0,1);
+
   height: auto;
+}
+
+.centered:hover {
+  opacity: 0.9;
+  cursor: pointer;
 }
